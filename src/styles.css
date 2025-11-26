@@ -1,0 +1,11 @@
+/* src/styles.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f9; /* Fondo gris muy claro para que resalten las tarjetas blancas */
+  color: #333;
+}
+
+* {
+  box-sizing: border-box;
+}
