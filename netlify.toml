@@ -1,0 +1,13 @@
+[build]
+  # El directorio donde Netlify ejecuta el comando (la raíz del repo)
+  base = "/"
+  # El directorio donde ng build pone los archivos finales
+  publish = "dist/frontend/browser" 
+  # Tu comando de build
+  command = "npm install && npm run build" 
+
+[[redirects]]
+  from = "/api/*"
+  to = "http://20.163.4.129:3005/:splat"
+  status = 200
+  force = true
