@@ -11,7 +11,7 @@ export class ProductService {
   private http = inject(HttpClient);
 
   // URL basada en tu 'application.properties' (puerto 3005) y 'ProductController' (/api/products)
-  private apiUrl = 'http://20.163.4.129:3005/api/products';
+  private apiUrl = '/api/products';
 
   /**
    * Obtener todos los productos
