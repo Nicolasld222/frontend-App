@@ -11,11 +11,11 @@ export class ProductService {
   private http = inject(HttpClient);
 
   // URL basada en tu 'application.properties' (puerto 3005) y 'ProductController' (/api/products)
-  private apiUrl = 'http://20.163.4.129:3000/api/products';
+  private apiUrl = 'http://20.163.4.129:3005/api/products';
 
   /**
    * Obtener todos los productos
-   * Endpoint: GET http://localhost:3005/api/products
+   * Endpoint: GET http://20.163.4.129:3005/api/products
    */
   getProducts(): Observable<Product[]> {
     return this.http.get<Product[]>(this.apiUrl);
@@ -23,7 +23,7 @@ export class ProductService {
 
   /**
    * Obtener un producto por ID
-   * Endpoint: GET http://20.163.4.129:3000/api/products/{id}
+   * Endpoint: GET http://20.163.4.129:3005/api/products/{id}
    * (Requiere el ajuste en tu Backend mencionado en la respuesta anterior)
    */
   getProductById(id: number): Observable<Product> {
@@ -32,7 +32,7 @@ export class ProductService {
 
   /**
    * Crear un nuevo producto (Solo ADMIN)
-   * Endpoint: POST http://20.163.4.129:3000/api/products
+   * Endpoint: POST http://20.163.4.129:3005/api/products
    */
   createProduct(product: Product): Observable<Product> {
     return this.http.post<Product>(this.apiUrl, product);
