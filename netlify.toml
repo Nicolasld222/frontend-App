@@ -8,6 +8,6 @@
 
 [[redirects]]
   from = "/api/*"
-  to = "http://20.163.4.129:3005/:splat"
+  to = "http://frontend-sena.duckdns.org:3005/:splat"
   status = 200
   force = true
